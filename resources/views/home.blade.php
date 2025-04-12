@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     </head>
 <body>
-    @include('layouts.header') 
+    @include('layouts.header')
+    @include('layouts.contact') 
     <main>
     @include('layouts.form')  
     </main>

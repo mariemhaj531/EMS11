@@ -9,8 +9,9 @@
                 <ul class="list-unstyled">
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">À Propos</a></li>
-                    <li><a href="#">Contact</a></li>     
+                    <li><a href="/apropos">À Propos</a></li>
+                    <li><a href="#">Contact</a></li>  
+                    <li><a href="#">Connexion</a></li>       
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 footer-section">

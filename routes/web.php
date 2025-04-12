@@ -18,3 +18,9 @@ Route::get('/', function () {
     return view('home');
 });
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('subscribe');
+
+Route::get('/apropos', function () {
+    return view('layouts.apropos');
+});
+
+

@@ -5,21 +5,18 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
 }
-
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 0 20px; */
 }
-
 .logo img {
-    height: 90px;
+    height: 85px;
 }
 
 .menu-button button {
@@ -32,24 +29,31 @@ header {
 .menu-button button:hover{
     background-color: white;
 }
-.contact-header {
-    background: linear-gradient(to right, #8dc6ff, #c2e9fb);
-    padding: 40px 20px;
-    color: white;
-    width: 100vw; /* 100% de la largeur de la fenêtre */
-    text-align: center;
-    box-sizing: border-box;
-}
-
-
-.contact-header h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contact-header p {
+/* Navbar */
+.navbar {
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    /* padding: 15px 30px; */
+    margin-right: 60px;
+  }
+  .navbar .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 510;
     font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto;
-}
+    transition: color 0.3s;
+    text-align: center;
+    
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #00AEEF;
+  }
