@@ -1,0 +1,60 @@
+body { 
+    font-family: Arial, sans-serif;
+     margin: 0; 
+     padding: 0; 
+    }
+header {
+     background: url('apropos.jpg') no-repeat center center/cover;
+      color: white; 
+      text-align: center; 
+      padding: 80px 20px; }
+.btn {
+     background-color: #ff6d6d; 
+     color: white;
+      padding: 10px 20px; 
+      border: none;
+      border-radius: 5px;
+       text-decoration: none;
+     }
+.section {
+     padding: 40px 20px; 
+     text-align: center;
+     }
+.features { 
+    display: flex; 
+    justify-content: space-around;
+     flex-wrap: wrap; 
+    }
+.feature {
+     width: 30%;
+      min-width: 200px;
+       margin: 10px 0; 
+    }
+.realisations { 
+    display: flex; 
+    justify-content: space-around;
+     flex-wrap: wrap; 
+    }
+.realisations
+ img { 
+     width: 30%; 
+     min-width: 200px;
+     margin: 10px 0; 
+    }
+.testimonials {
+     background: linear-gradient(to right, #8dc6ff, #c2e9fb);
+      padding: 40px 20px; 
+    }
+.testimonial-box { 
+    background: white;
+     border-radius: 10px;
+      padding: 20px;
+       margin: 10px; 
+       width: 30%;
+        display: inline-block;
+         vertical-align: top; 
+        }
+footer {
+     text-align: center;
+     padding: 40px 20px; 
+    }

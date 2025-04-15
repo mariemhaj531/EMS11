@@ -15,12 +15,20 @@ use App\Http\Controllers\NewsletterController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('app');
 });
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('subscribe');
 
 Route::get('/apropos', function () {
     return view('layouts.apropos');
 });
+// Route::get('/services', function () {
+//     return view('layouts.services');
+// });
+
+Route::get('/contact', function () {
+    return view('layouts.contact');
+});
+
 
 

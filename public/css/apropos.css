@@ -14,7 +14,7 @@ body {
     background: linear-gradient(to right, #76d2f8, #f3d4af);
     color: white;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
   
   .apropos h1 {
@@ -39,7 +39,7 @@ body {
   
   .chosirems {
     background-color: #fff;
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
   
  .chosirems h2 {
@@ -73,16 +73,18 @@ body {
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 40px;
+    display:flex;
   }
   
   .service {
-    max-width: 300px;
+    max-width: 500px;
     text-align: left;
+    
   }
   
   .service h3 {
     font-size: 18px;
-    color: #444;
+    color: #35a2d4;
     margin-bottom: 10px;
   }
   

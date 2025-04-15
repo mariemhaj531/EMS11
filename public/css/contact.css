@@ -2,7 +2,7 @@
     background: linear-gradient(to right, #8dc6ff, #c2e9fb);
     padding: 40px 20px;
     color: white;
-    width: 100vw; /* 100% de la largeur de la fenêtre */
+    width: 100vw;
     text-align: center;
     box-sizing: border-box;
 }

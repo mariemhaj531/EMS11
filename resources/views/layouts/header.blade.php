@@ -9,7 +9,7 @@
     </div>
     <div class="navbar">
     <ul class="nav-links">
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="/services">Services</a></li>
                     <li><a href="/apropos">À Propos</a></li>
                     <li><a href="/contact">Contact</a></li>  
