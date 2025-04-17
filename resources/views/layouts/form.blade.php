@@ -3,7 +3,7 @@
 </head>
 <div class="contact-wrapper">
 <div class="contact-container">
-<form action="#" method="POST">
+<form action="{{ route('contact.send') }}" method="POST">
     @csrf
     <h2>Formulaire de Contact</h2>
     <label for="name">Nom</label><br/>
@@ -13,6 +13,11 @@
     <label for="message">Message</label><br/>
     <textarea id="message" name="message" required placeholder="Votre message"></textarea><br/>
     <button type="submit">Contactez-nous</button>
+    @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+    @endif
 </form>
 </div>
 </div>

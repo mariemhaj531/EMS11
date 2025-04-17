@@ -14,7 +14,9 @@ header {
       padding: 10px 20px; 
       border: none;
       border-radius: 5px;
-       text-decoration: none;
+      text-decoration: none;
+      /* box-sizing: border-box; */
+
      }
 .section {
      padding: 40px 20px; 
@@ -42,8 +44,19 @@ header {
      margin: 10px 0; 
     }
 .testimonials {
-     background: linear-gradient(to right, #8dc6ff, #c2e9fb);
-      padding: 40px 20px; 
+    background: linear-gradient(to right, #76d2f8, #f3d4af);
+     padding: 40px 20px; 
+     text-align: center;
+     
+    }
+    h2{
+    text-align: center;
+    color: #8dc6ff;
+    }
+.proj{
+        text-align: center;
+        padding: 40px 20px;
+       
     }
 .testimonial-box { 
     background: white;

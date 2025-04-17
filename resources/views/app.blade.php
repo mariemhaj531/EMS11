@@ -42,9 +42,9 @@
     </div>
   </section>
   <section class="testimonials">
-    <h2>Ce que disent nos clients</h2>
+    <h2><font color="white">Ce que disent nos clients</font></h2>
     <div class="testimonial-box">
-        <img src="{{ asset('images/cl1.jpg') }}" alt="client 1">
+      <img src="{{ asset('images/cl1.jpg') }}" alt="client 1">
       <p>"Une expérience incroyable! Service rapide et professionnel. Je suis ravi!"</p>
       <strong>Jean Dupont</strong><br>
       <em>Directeur Marketing</em>
@@ -62,9 +62,9 @@
       <em>Chef d’entreprise</em>
     </div>
   </section>
-  <div>
-  <h2>Prêt à démarrer un projet ?</h2>
-    <p>Nos services sont conçus pour vous aider à atteindre vos objectifs grâce à des solutions créatives et efficaces.</p>
+  <div class="proj">
+  <h2 >Prêt à démarrer un projet ?</h2>
+    <p >Nos services sont conçus pour vous aider à atteindre vos objectifs grâce à des solutions créatives et efficaces.</p>
     <a href="/contact" class="btn">Contactez-nous</a>
   </div> 
 @include('layouts.footer')

@@ -29,6 +29,8 @@ Route::get('/apropos', function () {
 Route::get('/contact', function () {
     return view('layouts.contact');
 });
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
 
 
 
