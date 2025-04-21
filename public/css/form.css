@@ -1,16 +1,17 @@
 body {
-    background-color: white; 
+    /* background-color: white;  */
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 .contact-wrapper {
+    /* background: white;  */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f9f9f9; 
+    background-color: white; 
 }
 .contact-container form {
     /* background: white; */
