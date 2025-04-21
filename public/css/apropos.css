@@ -70,18 +70,23 @@ body {
     font-size: 32px;
     margin-bottom: 40px;
   }
-  
-  .services-container {
-    /* flex-wrap: wrap; */
+  .all-services{
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .services-container {
+    /* margin-right: 199px; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
     gap: 40px;
-    display:flex;
+    display:inline-block;
   }
   
   .service {
     max-width: 500px;
     text-align: left;
-    
+    /* display: flex; */
   }
   
   .service h3 {
@@ -96,7 +101,9 @@ body {
   }
   
   .service-img {
-    max-width: 300px;
+    max-width: 440px;
     margin-top: 20px;
+    margin-left: 170px;
+    height: 310px;
   }
   

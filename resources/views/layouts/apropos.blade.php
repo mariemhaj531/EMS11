@@ -18,6 +18,7 @@
    </section>
    <section class="services">
     <h2>Nos services</h3>
+    <div class="all-services">
     <div class="services-container">
     <div class="service">
       <h3>Conseil en gestion et stratégie:</h3>
@@ -32,8 +33,9 @@
       <h3>Soutien aux entreprises:</h3>
       <p>Accompagnement des entreprises dans la recherche de solutions adaptée à leurs besoins,gestion de projets dans le respect des délais et des budgets. </p>
     </div>
-    <img src="{{ asset('images/service.jpg') }}"  class="service-img" alt="image">
     </div>
+    <img src="{{ asset('images/service.jpg') }}"  class="service-img" alt="image">
+    <div>
     </section>
     
 @include('layouts.footer')
