@@ -13,8 +13,10 @@ body {
   .apropos {
     background: linear-gradient(to right, #76d2f8, #f3d4af);
     color: white;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* padding: 40px 20px; */
+
   }
   
   .apropos h1 {
