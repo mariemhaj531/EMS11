@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    
-    <title>EMS</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> 
+    <title>EMS</title>
     </head>
 <body>
 @include('layouts.header')
-<header>
+<div class="hero">
+    <!-- <div class="hero-image"> -->
+        <!-- <img src="{{ asset('../images/home.jpg') }}" alt="Hero Image"> -->
     <h1>Bienvenu chez EMS</h1>
     <p>Nous offrons des services professionnels adaptés à vos besoins spécifiques.</p>
     <a href="/services" class="btn">Découvrez nos services</a>
-</header>
+</div>
 <section class="section features">
     <div class="feature">
     <i class="fas fa-lightbulb"></i>
@@ -23,13 +24,13 @@
       <p>Nous apportons des solutions novatrices adaptées à vos besoins.</p>
     </div>
     <div class="feature">
-    <i class=""></i>
-      <h2>Digital</h2>
+    <i class="fa-solid fa-globe"></i>
+          <h2>Digital</h2>
       <p>Transformez votre présence en ligne et boostez votre visibilité.</p>
     </div>
     <div class="feature">
-    <i class=""></i>
-      <h2>Croissance</h2>
+    <i class="fa-solid fa-arrow-up-right-dots"></i>
+        <h2>Croissance</h2>
       <p>Notre expertise vous aide à atteindre vos objectifs d'affaires.</p>
     </div>
   </section>
