@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AproposController;
+use App\Http\Controllers\AppController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +21,25 @@ use App\Http\Controllers\NewsletterController;
 Route::get('/', function () {
     return view('app');
 });
+Route::get('/apps', [AppController::class, 'index']);
+
+
 Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('subscribe');
 
 Route::get('/apropos', function () {
     return view('layouts.apropos');
 });
-// Route::get('/services', function () {
-//     return view('layouts.services');
-// });
+Route::get('/apropos', [AproposController::class, 'index'])->name('apropos');
+
 
 Route::get('/contact', function () {
     return view('layouts.contact');
 });
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
+// Route::get('/services', function () {
+//     return view('layouts.services');
+// });
 
 
 

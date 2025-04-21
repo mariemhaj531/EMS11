@@ -10,7 +10,7 @@
 <section class="apropos">
     <h1>A Propos EMS</h1>
     <p>Chez EMS,nous nous engageons à offrir des services de conseil stratégiques et innovants pour aider les entreprises à atteindre leurs objectifs.Notre équipe d'experts travaile avec passion et engagement pour transformer vos défis en oppotunités. </p>
-    <img src="{{ asset('images/apropos.jpg') }}" alt="image">
+    <!-- <img src="{{ asset('images/apropos.jpg') }}" alt="image"> -->
 </section>
 <section class="chosirems">
     <h2>Pourquoi choisir EMS</h3>

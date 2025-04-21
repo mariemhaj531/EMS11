@@ -23,12 +23,12 @@
       <p>Nous apportons des solutions novatrices adaptées à vos besoins.</p>
     </div>
     <div class="feature">
-    <i class="fas fa-lightbulb"></i>
+    <i class=""></i>
       <h2>Digital</h2>
       <p>Transformez votre présence en ligne et boostez votre visibilité.</p>
     </div>
     <div class="feature">
-    <i class="fas fa-lightbulb"></i>
+    <i class=""></i>
       <h2>Croissance</h2>
       <p>Notre expertise vous aide à atteindre vos objectifs d'affaires.</p>
     </div>
