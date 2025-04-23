@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AproposController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 
 
 /*
@@ -41,6 +42,7 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 // Route::get('/services', function () {
 //     return view('layouts.services');
 // });
-
+Route::get('/connexion', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/connexion', [LoginController::class, 'login']);
 
 
