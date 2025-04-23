@@ -5,6 +5,7 @@ use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AproposController;
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -17,7 +18,7 @@ use App\Http\Controllers\AppController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Route::get('/', [HomeController::class, 'index']);
 Route::get('/', function () {
     return view('app');
 });

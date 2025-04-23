@@ -67,6 +67,19 @@ body {
         display: inline-block;
          vertical-align: top; 
         }
+        .realisations img {
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-box {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        
+        .testimonial-box.visible {
+            opacity: 1;
+        }
+        
 footer {
      text-align: center;
      padding: 40px 20px; 

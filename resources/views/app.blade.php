@@ -11,12 +11,11 @@
 <body>
 @include('layouts.header')
 <div class="hero">
-    <!-- <div class="hero-image"> -->
-        <!-- <img src="{{ asset('../images/home.jpg') }}" alt="Hero Image"> -->
     <h1>Bienvenu chez EMS</h1>
     <p>Nous offrons des services professionnels adaptés à vos besoins spécifiques.</p>
     <a href="/services" class="btn">Découvrez nos services</a>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <section class="section features">
     <div class="feature">
     <i class="fas fa-lightbulb"></i>
@@ -69,5 +68,31 @@
     <a href="/contact" class="btn">Contactez-nous</a>
   </div> 
 @include('layouts.footer')
+<script>
+$(document).ready(function() {
+    // Animation au chargement
+    $(".hero").hide().fadeIn(2000);
+    $(".feature").hide().each(function(index) {
+        $(this).delay(500 * index).fadeIn(1000);
+    });
+    // Animation au survol des images de réalisations
+    $(".realisations img").hover(
+        function() {
+            $(this).css("transform", "scale(1.05)");
+        },
+        function() {
+            $(this).css("transform", "scale(1)");
+        }
+    );
+    // Animation au scroll
+    $(window).on("scroll", function() {
+        $(".testimonial-box").each(function() {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                $(this).addClass("visible");
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
