@@ -178,3 +178,16 @@
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+.logo-background {
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.logo-background img {
+    width: 90px; 
+    height: auto;
+}
+

@@ -7,7 +7,7 @@ use App\Http\Controllers\AproposController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,10 +39,15 @@ Route::get('/contact', function () {
 });
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
-// Route::get('/services', function () {
-//     return view('layouts.services');
-// });
-Route::get('/connexion', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/connexion', [LoginController::class, 'login']);
+
+Route::get('/connexion', [LoginController::class, 'showLoginForm'])->name('connexion');
+Route::post('/connexion', [LoginController::class, 'login'])->name('login');
+// Route::get('/dashboard', function () {
+//     return view('layouts.dashboard');
+// })->middleware('auth');
+
+
+
+Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 
 
