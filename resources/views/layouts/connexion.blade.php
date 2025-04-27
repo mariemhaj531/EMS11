@@ -52,67 +52,34 @@
 @include('layouts.footer')
 
 <script>
-// document.getElementById('loginForm').addEventListener('submit', async (event) => {
-//     event.preventDefault();  
-
-//     const email = document.querySelector('input[name="email"]').value;
-//     const password = document.querySelector('input[name="password"]').value;
-
-//     const data = {
-//         email: email,
-//         password: password
-//     };
-
-//     try {
-//         const response = await fetch("{{ route('login') }}", {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-//             },
-//             body: JSON.stringify(data)
-//         });
-
-//         const result = await response.json();
-
-//         if (response.ok) {
-//             // Connexion réussie, redirection vers l'URL de destination
-//             window.location.href = result.redirectUrl || '/dashboard'; // Ajoute une redirection par défaut si aucun URL n'est fourni
-//         } else {
-//             // Affiche une erreur si la connexion échoue
-//             alert(result.message || 'Identifiants incorrects.');
-//         }
-
-//     } catch (error) {
-//         console.error('Erreur lors de l\'envoi :', error);
-//         alert('Une erreur s\'est produite. Veuillez réessayer.');
-//     }
-// });
-// connexion.js
-
 document.querySelector('#loginForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Empêche l'envoi classique du formulaire
+    event.preventDefault(); 
 
+    // Get CSRF token
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+    // Create FormData object from the form
+    const formData = new FormData(event.target);
+
+    // Add CSRF token to FormData
+    formData.append('_token', csrfToken);
+
+    // Send AJAX request to backend
     fetch('/connexion', {
         method: 'POST',
-        body: new FormData(event.target), // Utilise le formulaire actuel
+        body: formData,
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erreur lors de la connexion');
-        }
-        return response.json(); 
-    })
+    .then(response => response.json())
     .then(data => {
         if (data.redirect) {
-            window.location.href = data.redirect; // Redirection vers le tableau de bord
+            window.location.href = data.redirect;
         } else {
-            console.error('Erreur dans la réponse:', data);
+            alert('Erreur lors de la connexion, identifiants invalides.');
         }
     })
     .catch(error => {
         console.error('Erreur:', error);
+        alert('Une erreur s\'est produite lors de la connexion.');
     });
 });
-
 </script>

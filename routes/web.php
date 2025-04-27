@@ -42,12 +42,12 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 
 Route::get('/connexion', [LoginController::class, 'showLoginForm'])->name('connexion');
 Route::post('/connexion', [LoginController::class, 'login'])->name('login');
-// Route::get('/dashboard', function () {
-//     return view('layouts.dashboard');
-// })->middleware('auth');
 
 
 
-Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard')->middleware('auth');
+
+Route::get('/dashboard', [AdminController::class, 'index'])
+    ->middleware('auth')
+    ->name('dashboard');
 
 

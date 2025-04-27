@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    padding-top: 30px;
+}
+
+.sidebar h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    text-decoration: none;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Main Content Styles */
+.col-md-9 {
+    margin-left: 260px;
+    padding-top: 30px;
+}
+
+.d-flex .h2 {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #dee2e6;
+    color: #333;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Statistiques Cards */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.card.bg-primary, .card.bg-success, .card.bg-warning {
+    border-radius: 8px;
+}
+
+.card.bg-primary .card-title {
+    color: #007bff;
+}
+
+.card.bg-success .card-title {
+    color: #28a745;
+}
+
+.card.bg-warning .card-title {
+    color: #ffc107;
+}
+
+/* Graphiques */
+.card-body #salesChart, .card-body #userActivityChart {
+    width: 100%;
+    height: 300px;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+}
+
+/* Shadow Effects */
+.card-shadow-sm {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card.bg-primary.shadow-sm {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+.card.bg-success.shadow-sm {
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.3);
+}
+
+.card.bg-warning.shadow-sm {
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .col-md-9 {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+}
